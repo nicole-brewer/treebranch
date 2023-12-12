@@ -1,0 +1,31 @@
+---
+title: "Nicole Brewer"
+subtitle: "graduate research assistant research software engineer"
+format: html
+template: template.html
+primary-color: "#3498db"
+secondary-color: "#1abc9c"
+text-color: "#024877"
+link-color: "#96e0f7"
+socials-color: "rgba(0, 0, 0 0)"
+linear-gradient: "to bottom right"
+linkedin: "nicole-brewer"
+twitter: "catch_me_coding"
+github: "nicole-brewer"
+youtube: "nicole-brewer"
+# if you want the accounts above to show up in a particular order, you will need
+# to specify them in your desired order under "socials". You will need to specify
+# the text, link, and font awesome class.
+socials:
+  - text: "Personal Website"
+    link: "https://nicole-brewer.com"
+    favicon: "fa fa-house"
+  # because Mastodon accounts are associated with a particular server, we can't 
+  # use one of the presets above. Note the HTML escape character "# &#64;" which
+  # will be replaced by "@" on being rendered. Using the at symbol below will
+  # cause a misrendering.
+  - text: "Mastodon"
+    link: "https://fosstodon.org/&#64;catch_me_coding" 
+    favicon: "fab fa-mastodon"
+
+---

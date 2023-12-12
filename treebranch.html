@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$title$</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/6bee25835f.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon"/>
+</head>
+	
+<body>
+  <div>
+  <img src="/images/profile.jpg" alt="Profile Picture">
+  <p id="userName">$title$</p>
+  <p id="description">$subtitle$</p>
+  </div>
+  <span>
+  $if(linkedin)$<a href="https://linkedin.com/in/$linkedin$" target="_blank">
+    <i class="fab fa-linkedin">
+  </a>$endif$
+    
+  </span>
+    
+  <main>
+    $for(socials)$
+      <a href="$socials.link$" target="_blank">
+        <i class="$socials.favicon$">&nbsp;</i> $socials.text$
+      </a>
+    $endfor$
+    $if(linkedin)$
+      <a href="https://linkedin.com/in/$linkedin$" target="_blank">
+        <i class="fab fa-linkedin">&nbsp;</i> LinkedIn
+      </a>
+    $endif$
+    $if(twitter)$
+    <a href="https://twitter.com/$twitter$/" target="_blank">
+      <i class="fab fa-twitter">&nbsp;</i> Twitter
+    </a>
+    $endif$
+    $if(bluesky)$
+    <a href="https://bsky.app/profile/$bluesky$/" target="_blank">
+      <i class="fa-solid fa-square">&nbsp;</i> Bluesky
+    </a>    
+    $endif$
+    $if(tiktok)$
+    <a href="https://www.tiktok.com/@$tiktoc$/" target="_blank">
+      <i class="fab fa-tiktok">&nbsp;</i> TikTok
+    </a>
+    $endif$
+    $if(youtube)$
+    <a href="https://www.youtube.com/@$youtube$/" target="_blank">
+      <i class="fab fa-youtube">&nbsp;</i> YouTube
+    </a>
+    $endif$
+    $if(discord)$
+    <a href="https://discord.gg/$discord$" target="_blank">
+      <i class="fab fa-discord">&nbsp;</i> Discord
+    </a>
+    $endif$
+    $if(medium)$
+    <a href="https://medium.com/@$medium$/" target="_blank">
+      <i class="fab fa-medium">&nbsp;</i> Medium
+    </a>
+    $endif$
+    $if(github)$
+    <a href="https://github.com/$github$/" target="_blank">
+      <i class="fab fa-github">&nbsp;</i> Github
+    </a>
+    $endif$
+    $if(apple-music)$
+    <a href="https://music.apple.com/profile/$apple-music$/" target="_blank">
+      <i class="fab fa-itunes-note">&nbsp;</i> Apple Music
+    </a>
+    $endif$
+    $if(spotify)$
+    <a href="https://open.spotify.com/user/$spotify$/" target="_blank">
+      <i class="fab fa-spotify">&nbsp;</i> Spotify
+    </a>
+    $endif$
+    $if(buymeacoffee)$
+    <a href="https://www.buymeacoffee.com/$buymeacoffee$/" target="_blank">
+      <i class="fa-solid fa-mug-hot">&nbsp;</i> buy me a coffee
+    </a>
+    $endif$
+  </main>
+  
+</body>
+</html>
