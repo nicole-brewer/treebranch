@@ -108,15 +108,21 @@
             <p>$subtitle$</p>
         </div>
         <div class="social-icons">
-            <a href="https://twitter.com/example" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://instagram.com/example" target="_blank"><i class="fab fa-instagram"></i></a>
-            <!-- Add more social icons as needed -->
+            $if(linkedin)$<a href="https://linkedin.com/in/$linkedin$" target="_blank"><i class="fab fa-linkedin"></i></a>$endif$
+            $if(bluesky)$<a href="https://bsky.app/profile/$bluesky$/" target="_blank"><i class="fa-solid fa-square"></a>$endif$
+            $if(tiktok)$<a href="https://www.tiktok.com/@$tiktoc$/" target="_blank"><i class="fab fa-tiktok"></i></a>$endif$
+            $if(youtube)$<a href="https://www.youtube.com/@$youtube$/" target="_blank"><i class="fab fa-youtube"></i></a>$endif$
+            $if(discord)$<a href="https://discord.gg/$discord$" target="_blank"><i class="fab fa-discord"></i></a>$endif$
+            $if(medium)$<a href="https://medium.com/@$medium$/" target="_blank"><i class="fab fa-medium"></i></a>$endif$
+            $if(github)$<a href="https://github.com/$github$/" target="_blank"><i class="fab fa-github"></i></a>$endif$
+            $if(apple-music)$<a href="https://music.apple.com/profile/$apple-music$/" target="_blank"><i class="fab fa-itunes-note"></i></a>$endif$
+            $if(spotify)$<a href="https://open.spotify.com/user/$spotify$/" target="_blank"><i class="fab fa-spotify"></i></a>$endif$
+            $if(mastodon)$<a href="https://$mastodon.server$/$mastodon.user$" target="_blank"><i class="fab fa-mastodon"></i></a>$endif$
         </div>
         <div class="links">
-            <a href="https://example.com" target="_blank">Website</a>
-            <a href="https://twitter.com/example" target="_blank">Twitter</a>
-            <a href="https://instagram.com/example" target="_blank">Instagram</a>
-            <!-- Add more links as needed -->
+            $for(socials)$
+            <a href="$socials.link$" target="_blank"><i class="$socials.favicon$">&nbsp;</i> $socials.text$</a>
+            $endfor$
         </div>
     </div>
 </body>
