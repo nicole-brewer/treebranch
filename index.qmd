@@ -3,6 +3,7 @@ title: "Nicole Brewer"
 subtitle: "Grad RA & RSE"
 format: html
 template: template.html
+#background-image: "background.png"
 primary-color: "#3498db"
 secondary-color: "#1abc9c"
 text-color: "#024877"
@@ -21,6 +22,9 @@ socials:
   - text: "Personal Website"
     link: "https://nicole-brewer.com"
     favicon: "fa fa-house"
+  - text: "Better Scientific Software Fellowship"
+    link: "https://bssw.io/fellows/nicole-brewer"
+    favicon: "fa fa-laptop-code"
   - text: "Buy Me a Coffee"
     link: "https://www.buymeacoffee.com/"
     favicon: "fa-solid fa-mug-hot"
