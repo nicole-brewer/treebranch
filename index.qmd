@@ -17,9 +17,6 @@ mastodon:
   server: "fosstodon.org"
   user: "catch_me_coding"
 email: "nbrewer&#64;asu.edu"
-# if you want the accounts above to show up in a particular order, you will need
-# to specify them in your desired order under "socials". You will need to specify
-# the text, link, and font awesome class.
 socials:
   - text: "Personal Website"
     link: "https://nicole-brewer.com"
