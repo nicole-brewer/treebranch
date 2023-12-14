@@ -1,14 +1,20 @@
 ---
-title: "Nicole Brewer"
-subtitle: "Grad RA & RSE"
 format: html
 template: template.html
-background-image: "profile.jpg"
-primary-color: "#3498db"
-secondary-color: "#1abc9c"
+
+## REQUIRED
+title: "Nicole Brewer"
+subtitle: "Grad RA & RSE"
 text-color: "#024877"
 button-color: "#96e0f7"
+
+## BACKGROUND OPTIONS
+primary-color: "#3498db"
+secondary-color: "#1abc9c"
 linear-gradient: "to bottom right"
+# background-image: "profile.jpg"
+
+## SOCIAL ICONS
 linkedin: "nicole-brewer"
 twitter: "catch_me_coding"
 github: "nicole-brewer"
@@ -17,6 +23,14 @@ mastodon:
   server: "fosstodon.org"
   user: "catch_me_coding"
 email: "nbrewer&#64;asu.edu"
+# bluesky: 
+# tiktok:
+# discord:
+# medium:
+# apple-music:
+# spotify:
+
+## BUTTONS
 socials:
   - text: "Personal Website"
     link: "https://nicole-brewer.com"
