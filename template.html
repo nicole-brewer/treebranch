@@ -37,6 +37,10 @@
           font-weight: bold;
         }
         
+        p {
+          margin-top: 0;
+        }
+        
         img {
           width: 96px;
           height: 96px;
@@ -79,10 +83,6 @@
             gap: 10px;
             margin: 30px 20px 0 20px;
         }
-        
-        .fab {
-            font-size: 22px;
-        }
 
         a {
             display: block;
@@ -112,17 +112,17 @@
             <p>$subtitle$</p>
         </div>
         <div class="social-icons">
-            $if(linkedin)$<a href="https://linkedin.com/in/$linkedin$" target="_blank"><i class="fab fa-linkedin"></i></a>$endif$
-            $if(bluesky)$<a href="https://bsky.app/profile/$bluesky$/" target="_blank"><i class="fa fa-square"></a>$endif$
-            $if(tiktok)$<a href="https://www.tiktok.com/@$tiktoc$/" target="_blank"><i class="fab fa-tiktok"></i></a>$endif$
-            $if(youtube)$<a href="https://www.youtube.com/@$youtube$/" target="_blank"><i class="fab fa-youtube"></i></a>$endif$
-            $if(discord)$<a href="https://discord.gg/$discord$" target="_blank"><i class="fab fa-discord"></i></a>$endif$
-            $if(medium)$<a href="https://medium.com/@$medium$/" target="_blank"><i class="fab fa-medium"></i></a>$endif$
-            $if(github)$<a href="https://github.com/$github$/" target="_blank"><i class="fab fa-github"></i></a>$endif$
-            $if(apple-music)$<a href="https://music.apple.com/profile/$apple-music$/" target="_blank"><i class="fab fa-itunes-note"></i></a>$endif$
-            $if(spotify)$<a href="https://open.spotify.com/user/$spotify$/" target="_blank"><i class="fab fa-spotify"></i></a>$endif$
-            $if(mastodon)$<a href="https://$mastodon.server$/$mastodon.user$" target="_blank"><i class="fab fa-mastodon"></i></a>$endif$
-            $if(email)$<a href="mailto:$email$" target="_blank"><i class="fa-solid fa-envelope"></i></a>$endif$
+            $if(linkedin)$<a href="https://linkedin.com/in/$linkedin$" target="_blank"><i class="fa-xl fab fa-linkedin"></i></a>$endif$
+            $if(bluesky)$<a href="https://bsky.app/profile/$bluesky$/" target="_blank"><i class="fa-xl fa fa-square"></a>$endif$
+            $if(tiktok)$<a href="https://www.tiktok.com/@$tiktoc$/" target="_blank"><i class="fa-xl fab fa-tiktok"></i></a>$endif$
+            $if(youtube)$<a href="https://www.youtube.com/@$youtube$/" target="_blank"><i class="fa-xl fab fa-youtube"></i></a>$endif$
+            $if(discord)$<a href="https://discord.gg/$discord$" target="_blank"><i class="fa-xl fab fa-discord"></i></a>$endif$
+            $if(medium)$<a href="https://medium.com/@$medium$/" target="_blank"><i class="fa-xl fab fa-medium"></i></a>$endif$
+            $if(github)$<a href="https://github.com/$github$/" target="_blank"><i class="fa-xl fab fa-github"></i></a>$endif$
+            $if(apple-music)$<a href="https://music.apple.com/profile/$apple-music$/" target="_blank"><i class="fa-xl fab fa-itunes-note"></i></a>$endif$
+            $if(spotify)$<a href="https://open.spotify.com/user/$spotify$/" target="_blank"><i class="fa-xl fab fa-spotify"></i></a>$endif$
+            $if(mastodon)$<a href="https://$mastodon.server$/$mastodon.user$" target="_blank"><i class="fa-xl fab fa-mastodon"></i></a>$endif$
+            $if(email)$<a href="mailto:$email$" target="_blank"><i class="fa-xl fa-solid fa-envelope"></i></a>$endif$
         </div>
         <div class="links">
             $for(socials)$
