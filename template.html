@@ -12,23 +12,27 @@
     <style>
     
         html {
-            height: 100%;
+
         }
         
         body {
+            $if(linear-gradient)$
+            background: linear-gradient($linear-gradient$, $primary-color$, $secondary-color$) no-repeat center center fixed;
+            $else$
+            background: $primary-color$ no-repeat center center fixed;
+            $endif$
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
             font-family: 'IBM Plex Serif', serif;
             margin: 0;
             padding: 0;
-            $if(linear-gradient)$
-            background: linear-gradient($linear-gradient$, $primary-color$, $secondary-color$);
-            $else$
-            background: $primary-color$;
-            $endif$
         }
 
         .container {
             max-width: 600px;
-            margin: 50px auto;
+            margin: 50px auto 20px auto;
             text-align: center;
         }
         
@@ -102,6 +106,23 @@
           color: $text-color$;
         }
 
+        footer {
+            text-align: center;
+            margin: 60px 0;
+            width: 100%;
+        }
+        
+        footer p {
+            margin: 5px 0;
+            color: $text-color$;
+            font-size: .7em;
+        }
+        
+        footer a {
+            text-decoration:none;
+            color: $button-color$
+        }
+
     </style>
     <title>$title$'s Links</title>
 </head>
@@ -130,6 +151,9 @@
             <a href="$socials.link$" target="_blank">$if(socials.favicon)$<i class="$socials.favicon$">&nbsp;</i>$endif$ $socials.text$</a>
             $endfor$
         </div>
+        <footer>
+        <p>Love this page? Copy the <a href="https://github.com/nicole-brewer/treebranch" target="_blank">treebranch</a> template on GitHub.</p>
+        </footer>
     </div>
 </body>
 </html>

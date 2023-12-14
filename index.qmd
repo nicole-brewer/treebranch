@@ -25,6 +25,6 @@ socials:
     link: "https://bssw.io/fellows/nicole-brewer"
     favicon: "fa fa-laptop-code"
   - text: "Buy Me a Coffee"
-    link: "https://www.buymeacoffee.com/"
+    link: "https://www.buymeacoffee.com/catch_me_coding"
     favicon: "fa-solid fa-mug-hot"
 ---
