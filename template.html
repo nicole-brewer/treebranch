@@ -54,27 +54,28 @@
         .social-icons {
             display: flex;
             justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
-            height: 54px;
+            margin: 35px 5px 15px 5px;
         }
 
         .social-icons a {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: $socials-color$;
+            background-color: $button-color$;
             color: $text-color$;
             text-decoration: none;
-            transition: text-size 0.5s, transform 0.5s;
+            width: 40px;
+            height: 40px;
+            margin: 5px 10px 5px 10px;
+            border-radius: 50%;
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.5s, box-shadow 1s;
         }
 
         .social-icons a:hover {
-            text-size: 24px;
-            transform: scale(1.04);
+            box-shadow: 0 0 1px 3px rgba(0, 0, 0, 0.10);
+            transform: scale(1.08);
+            color: $text-color$;
         }
 
         .links {
@@ -84,19 +85,19 @@
             margin: 30px 20px 0 20px;
         }
 
-        a {
+        .links a {
             display: block;
             padding: 10px;
             margin: 5px;
             text-decoration: none;
             color: $text-color$;
-            background-color: $link-color$;
+            background-color: $button-color$;
             border-radius: 5px;
             box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
             transition: box-shadow 1s, transform 0.5s;
         } 
-        a:hover {
-          box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.15);
+        .links a:hover {
+          box-shadow: 0 0 1px 3px rgba(0, 0, 0, 0.10);
           transform: scale(1.01);
           color: $text-color$;
         }
