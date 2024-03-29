@@ -32,9 +32,12 @@ email: "nbrewer&#64;asu.edu"
 
 ## BUTTONS
 socials:
-  - text: "Personal Website"
-    link: "https://nicole-brewer.com"
+  - text: "Jupyter4Science "
+    link: "https://jupyter4.science"
     favicon: "fa fa-house"
+  - text: "Curriculum Vitae"
+    link: "https://github.com/nicole-brewer/cv/blob/master/cv.pdf"
+    favicon: "fa fa-file"
   - text: "Better Scientific Software Fellowship"
     link: "https://bssw.io/fellows/nicole-brewer"
     favicon: "fa fa-laptop-code"
